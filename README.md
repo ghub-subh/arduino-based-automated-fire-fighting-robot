@@ -4,6 +4,12 @@ This project builds a compact fire-fighting robot using Arduino Uno. Flame senso
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
+## 🎞️ Project Presentation
+
+[![View Presentation](https://img.shields.io/badge/View-PPT-blue?logo=google-drive)](https://drive.google.com/file/d/15wkX7mMg6WJog-Z-of3WoR0a0W4UWV-V/view?usp=sharing)
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
 ## 📚 Table of Contents
 
 * [Abstract](#abstract-)
