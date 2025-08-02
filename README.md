@@ -6,41 +6,44 @@ This project builds a compact fire-fighting robot using Arduino Uno. Flame senso
 
 ## 📚 Table of Contents
 
-- [Abstract](#abstract)
-- [Introduction](#introduction)
-- [Background or Review of Related Work](#background-or-review-of-related-work)
-- [Project Objectives](#project-objectives)
-- [Scope](#scope)
-- [Project Management](#project-management)
-  - [Experimentation](#experimentation)
-  - [Design](#design)
-  - [Development and testing](#development-and-testing)
-  - [Real world testing](#real-world-testing)
-- [Theory of Embedded System](#theory-of-embedded-system)
-  - [Development History](#development-history)
-  - [Advantages of Embedded Systems](#advantages-of-embedded-systems)
-  - [Disadvantages of Embedded System](#disadvantages-of-embedded-system)
-  - [Applications](#applications)
-- [Methodology](#methodology)
-  - [Problem Identification](#problem-identification)
-  - [Algorithm Description](#algorithm-description)
-  - [Design Description](#design-description)
-  - [Flowchart](#flowchart)
-- [Implementation](#implementation)
-  - [Hardware Components](#hardware-components)
-  - [Components Required](#components-required)
-  - [Core Components](#core-components)
-  - [Hardware Assembly](#hardware-assembly)
-  - [Pin connections](#pin-connections)
-  - [Circuit Diagram](#circuit-diagram)
-  - [Setting up the System](#setting-up-the-system)
-  - [Programming (Arduino Uno Code)](#programming-arduino-uno-code)
-  - [Cost Estimation](#cost-estimation)
-  - [Working Model Images](#working-model-images)
-- [Result](#result)
-- [Discussion](#discussion)
-- [Conclusion](#conclusion)
-- [References](#references)
+* [Abstract](#abstract-)
+* [Introduction](#introduction-)
+* [Background or Review of Related Work](#background-and-related-work-)
+* [Project Objectives](#project-objectives-)
+* [Scope](#scope-of-the-project-️)
+* [Project Management](#project-management-)
+  * [Conceptualization and Research](#1-conceptualization-and-research)
+  * [Hardware and System Design](#2-hardware-and-system-design)
+  * [Development and Integration](#3-development-and-integration)
+  * [Deployment and Evaluation](#4-deployment-and-evaluation)
+* [Theory of Embedded System](#theory-of-embedded-systems-)
+  * [What is an Embedded System?](#what-is-an-embedded-system)
+  * [A Brief History](#a-brief-history)
+  * [Operating Principle](#operating-principle)
+  * [Advantages of Embedded Systems](#advantages-of-embedded-systems)
+  * [Disadvantages of Embedded Systems](#disadvantages-of-embedded-systems)
+  * [Common Applications](#common-applications)
+* [Methodology](#methodology-️)
+  * [Problem Identification](#81-problem-identification)
+  * [System Design and Operational Logic](#82-system-design-and-operational-logic)
+  * [Development and Testing Procedure](#83-development-and-testing-procedure)
+  * [System Flowchart](#84-system-flowchart)
+* [Implementation](#9-implementation)
+  * [Hardware Components](#91-hardware-components)
+  * [Components Required](#92-components-required)
+  * [Core Components](#93-core-components)
+  * [Hardware Assembly](#94-hardware-assembly)
+  * [Pin connections](#95-pin-connections)
+  * [Circuit Diagram](#96-circuit-diagram)
+  * [Setting up the System](#97-setting-up-the-system)
+  * [Programming (Arduino Uno Code)](#98-programming-arduino-uno-code)
+  * [Cost Estimation](#99-cost-estimation)
+* [Result](#10-result-)
+* [Discussion](#11-discussion-)
+  * [Limitations](#limitations)
+  * [Future Improvements](#future-improvements)
+* [Conclusion](#12-conclusion-)
+* [References](#13-references-)
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -228,47 +231,10 @@ The physical prototype was constructed and validated through a systematic five-s
 5.  **Final Adjustments and Field Tests:** Based on testing results, refine the code and hardware setup to improve performance. Perform final tests in a controlled area with simulated fire scenarios to validate the robot's overall effectiveness.
 
 ### 8.4 System Flowchart
+
 The following flowchart outlines the operational logic of the firefighting robot.
 
 ![Flowchart](https://github.com/ghub-subh/arduino-based-automated-fire-fighting-robot/blob/main/flow_chart.jpg?raw=true)
-
-START
-|
-+-- Power on System & Initialize all components (Arduino, Sensors, Motors, etc.)
-|
-+-- ENTER CONTINUOUS MONITORING LOOP
-|     |
-|     +-- Read Flame Sensors (Left, Middle, Right).
-|     |
-|     +-- Is Fire Detected?
-|           |
-|           +-- NO: Loop back and continue monitoring.
-|           |
-|           +-- YES:
-|                 |
-|                 +-- Determine the fire's direction from sensor data.
-|                 |
-|                 +-- Activate the buzzer and start moving the car towards the fire.
-|                 |
-|                 +-- Once near the fire, stop the car and deactivate the buzzer.
-|                 |
-|                 +-- Activate the water pump and servo motor.
-|                 |
-|                 +-- ENTER EXTINGUISHING LOOP
-|                 |     |
-|                 |     +-- Is the fire still present?
-|                 |           |
-|                 |           +-- YES: Continue spraying and adjusting the servo. (Loop)
-|                 |           |
-|                 |           +-- NO (Fire is Extinguished):
-|                 |                 |
-|                 |                 +-- Turn off the pump and servo.
-|                 |                 |
-|                 |                 +-- Break from the Extinguishing Loop.
-|                 |
-|                 +-- Return to Monitoring Mode.
-|
-+-- END (Process waits in Monitoring Mode for the next event)
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -477,7 +443,7 @@ Uploading code to an Arduino Uno R3 is a straightforward process using the Ardui
 The Arduino was programmed using the Arduino IDE.
 
 ### 9.9 Cost Estimation
-===================================================================================
+
 |           Component                                            |   Cost (INR)   |
 |----------------------------------------------------------------|:--------------:|
 | Arduino Uno                                                    |     550/-      |
@@ -495,9 +461,9 @@ The Arduino was programmed using the Arduino IDE.
 | 3.7V Battery ×2                                                |     160/-      |
 | Silicon Pipe                                                   |      30/-      |
 | Wheels ×4                                                      |     100/-      |
------------------------------------------------------------------------------------
 | **Total**                                                      |  **1649/-**    |
-===================================================================================
+
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -561,6 +527,5 @@ Overall, the Arduino firefighting robot serves as a successful proof-of-concept 
 * [Arduino Forum: Firefighter Robotic Car using Arduino Uno](https://forum.arduino.cc/t/firefighter-robotic-car-using-arduino-uno/1184578)
 * [IJPREMS: Arduino Based Fire Fighting Robot](https://www.ijprems.com/uploadedfiles/paper/issue_4_april_2024/33460/final/fin_ijprems1714036552.pdf)
 
-===========================================================================================================================================
-
+-------------------------------------------------------------------------------------------------------------------------------------------
 
