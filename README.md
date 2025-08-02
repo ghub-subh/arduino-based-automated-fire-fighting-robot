@@ -10,6 +10,19 @@ This project builds a compact fire-fighting robot using Arduino Uno. Flame senso
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
+## 🔥 Project Images
+
+### 🧠 System Overview  
+![System Overview](https://github.com/ghub-subh/arduino-based-automated-fire-fighting-robot/blob/main/IMAGE1.png?raw=true)
+
+### 🛠️ Hardware Setup  
+![Hardware Setup](https://github.com/ghub-subh/arduino-based-automated-fire-fighting-robot/blob/main/IMAGE2.jpg?raw=true)
+
+### 🚨 Robot in Action  
+![Robot in Action](https://github.com/ghub-subh/arduino-based-automated-fire-fighting-robot/blob/main/IMAGE3.jpg?raw=true)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## 📚 Table of Contents
 
 * [Abstract](#abstract-)
